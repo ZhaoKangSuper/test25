@@ -25,6 +25,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
+    @RequestMapping(value = "/test")
+    public String test() {
+        return "text";
+    }
+
     /**
      * 跳转到注册页面
      * @param model
